@@ -27,6 +27,7 @@ public class PersonaRest {
 
     @DeleteMapping("/eliminar/{id}")
     public void eliminar(@PathVariable("id") Integer id){
+     
         personaDAO.deleteById(id);
     }
 
